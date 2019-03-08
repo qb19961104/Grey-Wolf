@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title>铁锅打灰太狼</title>
+		<style>
+			#wrap{
+				width:320px;
+				height:480px;
+				margin:50px auto;
+				background:url('img/game_bg.jpg');
+				position: relative;
+			}
+			#scoreDiv{
+				font-size: 1.7rem;
+				color:white;
+				font-weight: bold;
+				position: absolute;
+				top:12px;
+				left:60px;
+			}
+			#timerDiv{
+				width:182px;
+				height:16px;
+				border-radius:30px;
+				background:red;
+				position:absolute;
+				left:62px;
+				top:66px;
+			}
+			#wolves{
+				position: absolute;
+			}
+			#wolves img{
+				position:absolute ;
+			}
+			#startM,#overM,#again{
+				position: absolute;
+			}
+			#startM{
+				/*left:60px;*/
+				bottom:0;
+				right:0;
+				top:200px;
+				color: red;
+				font-size: 50px;
+				/*margin:auto;*/
+				text-align: center;
+				width:100%;
+				height:60px;
+				/*border:1px solid red;*/
+				cursor: pointer;
+			}
+			#overM{
+				left:0px;
+				bottom:0;
+				text-align: center;
+				right:0;
+				top:180px;
+				width:100%;
+				height:60px;
+				color: red;
+				font-size: 50px;
+				cursor: pointer;
+				display: none;
+				/*border:1px solid blue;*/
+			}
+			#again{
+				left:0px;
+				bottom:0;
+				text-align: center;
+				right:0;
+				top:280px;
+				width:100%;
+				height:60px;
+				color: red;
+				font-size: 50px;
+				cursor: pointer;
+				display: none;
+				/*border:1px solid blue;*/
+			}
+		</style>
+		<script src="js/wolf2.js"></script>
+	</head>
+	<body>
+		<!--背景-->
+		<div id="wrap">
+			<!--分数-->
+			<div id="scoreDiv">0</div>
+			
+			<!--倒计时-->
+			<div id="timerDiv"></div>
+			
+			<!--狼-->
+			<div id="wolves"></div>
+			
+			<!--开始模块-->
+			<div id="startM">开始游戏</div>
+			
+			<!--结束模块-->
+			<div id="overM">游戏结束</div>
+			<!--重新开始-->
+			<div id="again">重新开始</div>
+		</div>
+		<script type="text/javascript" src='js/wolf2.js'></script>
+	</body>
+</html>
